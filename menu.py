@@ -135,7 +135,7 @@ class Menu(QMainWindow):
         # msg = CustomDialog(message, children=[child, child_2])
         msg = CustomDialog(message, children=child)
         retval = msg.exec_()
-        print("end___")
+        # print("end___")
 
     def show_warning_messagebox(self, message="error"):
         msg = QMessageBox()
@@ -150,7 +150,7 @@ class Menu(QMainWindow):
         if e.key() == Qt.Key_Escape:
             self.close()
         if e.key() == Qt.Key_Return:
-            print(self.input_passwd_lineedit.text())
+            # print(self.input_passwd_lineedit.text())
             if self.input_passwd_lineedit.text() is not None:
                 self.event_btn_submit()
 

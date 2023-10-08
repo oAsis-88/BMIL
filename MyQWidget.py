@@ -44,9 +44,9 @@ class MplCanvas(FigureCanvasQTAgg):
         self.axes = fig.add_subplot(111)
         if x_xis is None:
             x_xis = [i for i in range(1, len(y_xis) + 1)]
-        print("MplCanvas")
-        print(x_xis)
-        print(y_xis)
+        # print("MplCanvas")
+        # print(x_xis)
+        # print(y_xis)
         self.axes.bar(x_xis, y_xis)
         # self.axes.plot(x_xis, y_xis)
         super(MplCanvas, self).__init__(fig)
@@ -66,7 +66,7 @@ class MyQLineEdit(QLineEdit):
     def keyPressEvent(self, e):
         super().keyPressEvent(e)
         text = self.text()
-        print(text)
+        # print(text)
         if text and not text[-1] == self.password[len(text) - 1]:
             self.count_error += 1
             self.num_char.append(len(text))
